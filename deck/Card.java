@@ -18,5 +18,8 @@ public ValueType getValue(){
   return this.value;
 }
 
+public int getValueScore(){
+  return value.getValueScore();
+}
 
 }

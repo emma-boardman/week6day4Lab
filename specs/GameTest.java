@@ -88,4 +88,35 @@ public void canMoveCardBetweenPLayers(){
   assertEquals(1, player2.handCount());
 }
 
+@Test
+public void canDealTwoCardsToTwoPlayers() {
+  game.addToCardPile(card1);
+  game.addToCardPile(card2);
+  // game.addToCardPile(card3);
+  // game.addToCardPile(card4);
+  game.dealCard(player1, card1);
+  game.dealCard(player2, card2);
+  // game.dealCard(player1, card3);
+  // game.dealCard(player2, card4);
+  assertEquals(1, player1.handCount());
+  assertEquals(1, player2.handCount());
+}
+
+
+@Test
+public int canReturnValueScore(){
+  game.addToCardPile(card1);
+  assertEquals(3, card1.getValueScore());
+}
+
+
+// @Test
+// public void canDetermineHigherCard(){
+//   game.addToCardPile(card1);
+//   game.addToCardPile(card2);
+//   game.dealCard(player1, card1);
+//   game.dealCard(player2, card2);
+//   if(card1.ValueType.valueScore)
+// }
+
 }
