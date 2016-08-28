@@ -16,30 +16,16 @@ public enum ValueType {
   KING (13),
   ACE (1);
 
-private final int valueScore;
+private int valueScore;
 
-ValueType(int valueScore){
-  this.valueScore = valueScore;
-}
+      ValueType(int valueScore) {
+          this.valueScore = valueScore;
+      }
 
+      public int getValueScore() {
+          return valueScore;
+      }
 
-private int valueScore() { return mass; }
-    
-
-
-
-// private ValueType(int valueScore) {
-//   this.valueScore = valueScore;
-// }
-
-
-public int valueScore(int valueScore){
-  this.valueScore = valueScore;
-}
-
-public int getValueScore(){
-  return this.valueScore;
-}
 
 }
 

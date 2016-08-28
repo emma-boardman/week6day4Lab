@@ -105,7 +105,7 @@ public void canDealTwoCardsToTwoPlayers() {
 
 @Test
 public int canReturnValueScore(){
-  game.addToCardPile(card1);
+  game.addToCardPile(Card card1);
   assertEquals(3, card1.getValueScore());
 }
 
